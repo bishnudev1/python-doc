@@ -183,30 +183,53 @@ a = 20
 b = 10
 ```
 1. Addtion (+)
-- print(a+b)
+```bash
+print(a+b)
+```
 2. Subtraction (-)
-- print(a-b)
+```bash
+print(a-b)
+```
 3. Multiplication (*)
-- print(a*b)
+```bash
+print(a*b)
+```
 4. Division (/)
-- print(a/b)
+```bash
+print(a/b)
+```
 5. Modulus (%)
-- print(a%b)
+```bash
+print(a%b)
+```
 6. Exponents (**)
-- print(a**b)
+```bash
+print(a**b)
+```
 7. Floor Division (//)
-- print(a//b)
+```bash
+print(a//b)
+```
 
 ## Assignment Operators in Python
 ```bash
 x = 10
 ```
 1. Increment Operator (+=)
-- x += 4
+```bash
+x += 4
+print(x)
+```
 3. Decrement Operator (-=)
-- x -= 3
-5. Equal Operator (==)
-- x == 2
+```bash
+x -= 4
+print(x)
+```
+4. Equal Operator (==)
+```bash
+x == 12
+print(x)
+```
 ## Bitwise Operators in Python
 ```bash
 x = 10
@@ -220,54 +243,272 @@ print(bin(x^y),x^y)
 ```
 ### Comparison Operator in Python
 
+```bash
 a = 25
 b = 15
 c = 25
+```
 
 1. Greater than (>)
-- print(a > b)
+```bash
+print(a > b)
+```
 2. Less than (<)
-- print(a > b) 
+```bash
+print(a < b)
+```
 3. Less than equalto (<=)
-- print(a <= b)
+```bash
+print(a <= b)
+```
 4. Greater than equalto (>=)
-- print(a >= b)
+```bash
+print(a >= b)
+```
 5. Equalto (==)
-- print(a == b)
+```bash
+print(a == b)
+```
 6. Not equalto (!=)
-- print(a != b)
+```bash
+print(a != b)
+```
 ### Identify Operators in Python
 
+```bash
 a = 10
 b = 10.5
 c = 'Hello,World!'
+```
 
 1. is -> Returns True if both variables are the same object
-- print(a is b)
+```bash
+print(a is b)
+```
 2. is not -> Returns True if both variables are not the same object
 The difference between Comparision and Identify Operators is that Identify Operator check the datatypes of two variables where Comparision Operator checks the Value of the variables
-- print(a is not b)
-- print(c is not a)
+```bash
+print(a is not b)
+print(c is not a)
+```
 
 ### Logical Operators in Python
+```bash
 x = 10
 y = 10.5
 z = 5
+```
 1. Union (and)
-- print(x > y and z == y)
+```bash
+print(x > y and z == y)
+```
 2. Or (or)
-- print(x > y or z == y)
+```bash
+print(x > y or z == y)
+```
 3. Not (not)
-- print(not x > y)
+```bash
+print(not x > y)
+```
 
 ### Membership Operators in Python
 myName = 'Bishnudev'
 l = [10,20,30,40,50]
 
 1. in -> Return True value if a string contains a word.
-- print('b' in myName)
-- print('B' in myName)
-- print('n' in myName)
+```bash
+print('b' in myName)
+print('B' in myName)
+print('n' in myName)
+```
 2. not in -> Return False value if a string does not contain a word.
-- print(60 not in l)
-- print(20 in l)
+```bash
+print(60 not in l)
+print(20 in l)
+```
+
+## Loops
+While Loops in Python
+- The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true.
+- We generally use this loop when we don't know the number of times to iterate beforehand.
+Syntax of while Loop in Python
+while test_expression:
+    Body of while
+```bash
+i = 1
+
+while(i != 11):
+    print(i)
+    i += 1
+```
+```bash
+n = 10
+
+while n >= 1:
+    print('This is awesome')
+    n -= 1
+
+print(n)
+```
+For Loops in Python
+- The for loop in Python is used to iterate over a sequence (list, tuple, string) or other iterable objects. Iterating over a sequence is called traversal.
+- We can generate a sequence of numbers using range() function. range(10) will generate numbers from 0 to 9 (10 numbers).
+
+Syntax of for Loop
+for val in sequence:
+    loop body
+```bash
+for i in range(1,11):
+    print(i)
+```
+```bash
+for n in range(10,0,-1):
+    print(n)
+```
+## String Functions & Operations
+
+### String Concatinations
+- Only same datatypes can concat with each other
+- Two different datatypes will give error such like a String & a Integar can't join
+```bash
+a = 'Hello'
+b = 'World'
+c = a + ' ' + b
+
+print(c)
+```
+```bash
+x = 10
+y = 25
+z = x + y
+
+print(z)
+```
+Error
+```bash
+p = 'This is a string'
+q = 30
+r = p + q
+
+print(r)
+```
+### String Indexing in Python
+- It starts from 0 to len(str)
+
+```bash
+str = 'My name is Bishnudev Khutia'
+
+print(str[4])
+print(str[2])
+print(str[12])
+print(str[-5])
+```
+### String Iteration in Python
+```bash
+str = "This is a String data type"
+
+t = len(str)
+```
+```bash
+for a in range(t):
+    print(str[a])
+```
+- Printing a String in Reverse(Method 1)
+```bash
+str = str[-1::-1]
+
+for a in range(t):
+    print(str[a])
+```
+- Printing a String in reverse (Method 2)
+```bash
+for a in range(t,-1,-1):
+    print(str[a])
+```
+- Printing a String without it's length
+```bash
+for a in str:
+    print(a)
+```
+### String Slicing in Python
+- It contents three values 1. Start Index 2. End Index 3. Slice Value
+```bash
+str = 'My name is Bishnudev Khutia'
+```
+- Upper syntax means It starts from 0 index and continue still the end of the string without slicing
+```bash
+print(str[0:len(str)])
+```
+- Upper syntax remains same like upper just it will slice every one word after one word
+```bash
+print(str[0:len(str):2])
+```
+- Upper syntax reverse the string
+```bash
+print(str[-1::-1])
+```
+### String Most Used Functions
+```bash
+str = "Hello World !"
+```
+- Lower Function -> Convert the string into small letters
+```bash
+print(str.lower())
+```
+- Higher Function -> Convert the string into big letters
+```bash
+print(str.upper())
+```
+- Capitalize Function -> Captilize all characters in a string
+```bash
+print(str.capitalize())
+```
+- Title Function -> Format a string like Title names
+```bash
+print(str.title())
+```
+- Find Function -> Returns index value of a characters if it is present in a string
+```bash
+print(str.find('e'))
+```
+- Index Function -> Returns the index of a characters
+```bash
+print(str.index('W'))
+```
+- isAlpha Function -> Returns Boolean value if a String is alpha or not
+```bash
+print(str.isalpha())
+```
+- isdigit Function -> Returns Boolean value if a String is digit or not
+```bash
+print(str.isdigit())
+```
+- isalnum Function -> Returns Boolean value if a String is alnum or not
+```bash
+print(str.isalnum())
+```
+- chr Funtion - > Convert an Integer to it's matching ASCII Character
+```bash
+print(chr(66))
+```
+- ord Funtion - > Convert a ASCII Character to it's matching Integer Value (Only takes one letter from left to right)
+```bash
+print(ord('B'))
+```
+- Format Function -> Used to format a data(vale) and insert in between Strings in runtime
+```bash
+str2 = "Hii my name is {Name}".format(Name="Bishnudev Khutia")
+print(str2)
+```
+```bash
+str3 = "My favourite number is {Num} because it's {Name}'s birthday date".format(Num=20,Name="Bishnudev")
+print(str3)
+```
+```bash
+str4 = "Hello everyone hope everyone is {0} otherwise it's {1}".format("fine","Lol")
+print(str4)
+```
+```bash
+str5 = "Welcome {} to {}".format("Bishnudev","India")
+print(str5)
+```
