@@ -1,0 +1,45 @@
+Data Types in Python
+- There is two types of datatypes in Python
+
+-- Mutable [ Can change it's state or contents ]
+---List, Dictionary, Byte array
+
+-- Immutable [ Can't change it's state or contents ]
+---Int,Float,Complex,String,Tuple,Set
+
+1. Number
+   - Integars [ 2,3,4,5,29 ]
+   - Floating Point [2.5,3.4,9.1 ]
+   - Complex Number [ 1+2i, 9+3j ]
+
+2. String
+   - 'Hello'
+   - "This is awesome@123"
+   - 'This is also a string'
+   - '''
+	My name is
+		Bishnudev
+			Khutia
+     '''
+3. List
+- List is an ordered sequence of items and it's the most used datatypes of python.
+- example of List is l = [2,3.5,"Bishnudev"]
+
+4. Tuple
+- Tuple is faster List but you can't modify items in it
+- example of Tuple is t = (2,4.5,'Hello')
+
+5. Dictionary
+- It contains Key and Value in it
+- It mutable data type, you can modify items in it
+- It mostly use in Database works
+- example of Dictionary is dic = {
+    'name':"Bishnudev",
+    'age':20,
+    'isSmoking':False
+}
+
+6. Set
+- You can't repeat same items in it
+- It's a immutable datatype just like Tuple
+- example of Set is s = {2,3,"Hi",True}

@@ -1,0 +1,4 @@
+what are the rules of declaring variables ?
+- Variable names are not Case-Sensitive
+- There should be no space in Variable names
+- Variables addreas are depend on it's size not it's type like other languages

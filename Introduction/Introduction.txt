@@ -1,0 +1,28 @@
+What is Python ?
+Python is an interpreted,object-oriented,high-level programming language with dynamic semantics.
+Python syntax are easy compared to other languages.
+
+What are the features of Python ?
+- Open source and easy to learn
+- Broad standard library
+- Cross Platform
+- Work on Interpreter Logic
+- Multi-Paradigm Language
+- High level programming
+- Extendable Language
+- Expressive Programming Language
+- GUI Support
+
+What are the application of Python ?
+- Network Programming
+- Data Analysis
+- Robotics
+- Website & Application Development
+- Desktop Application
+- Games Development
+- Web Scraping
+- Data Visualization
+- Scientific Calculation 
+- Machine Learning & AI
+- 3D Application Development
+- Audios & Videos Software Development

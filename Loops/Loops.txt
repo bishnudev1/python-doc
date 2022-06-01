@@ -1,0 +1,18 @@
+
+While Loops in Python
+- The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true.
+- We generally use this loop when we don't know the number of times to iterate beforehand.
+
+Syntax of while Loop in Python
+
+- while test_expression:
+     Body of while
+
+For Loops in Python
+- The for loop in Python is used to iterate over a sequence (list, tuple, string) or other iterable objects. Iterating over a sequence is called traversal.
+- We can generate a sequence of numbers using range() function. range(10) will generate numbers from 0 to 9 (10 numbers).
+
+Syntax of for Loop
+
+- for val in sequence:
+    loop body
