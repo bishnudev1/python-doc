@@ -5,6 +5,7 @@
 # 1. not in -> Return False value if a string does not contain a word.
 
 myName = 'Bishnudev'
+l = [10,20,30,40,50]
 
 # It will give False as Python is a Case-Sensitive Language
 print('b' in myName)
@@ -13,7 +14,6 @@ print('B' in myName)
 print('n' in myName)
 print('j' not in myName)
 
-l = [10,20,30,40,50]
 
 print(20 in l)
 
