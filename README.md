@@ -888,3 +888,25 @@ print(datetime.datetime.now())
 ```bash
 print(datetime.datetime(2022,2,2))
 ```
+### Pickle Module
+- Pickle modules helps us to create and load python data in it
+- We can store List, Tuple or any object to a txt or other file
+- Write Data with Pickle
+```bash
+l = [10,20,30,40,50,60,70,80,90,100]
+
+file = open('writeData.txt','wb')
+
+pickle.dump(l,file)
+
+file.close()
+```
+- Read Data with Pickle
+```bash
+file = open('writeData.txt','rb')
+
+l = pickle.load(file)
+print(l)
+```
+## JSON in Python
+### Coming Soon :)
