@@ -512,3 +512,247 @@ print(str4)
 str5 = "Welcome {} to {}".format("Bishnudev","India")
 print(str5)
 ```
+## List Functions & Operations
+
+### Iterations of List
+```bash
+L = [2,4,6,8,"Bishnudev",False,["One","Two",3,5]]
+```
+- Method 1
+```bash
+l = len(L)
+
+for a in range(l):
+    print(L[a])
+```
+- Method 2
+```bash
+for item in L:
+    print(item)
+```
+### Slice of a List
+
+```bash
+L = [2,3,4,8,9,"Hello"]
+```
+```bash
+print(L[0:2])
+
+print(L[0::2])
+
+print(L[3:])
+```
+- Reverse a List by Slicing
+```bash
+print(L[-1::-1])
+```
+### Index of a List
+
+```bash
+L = [2,3,4,8,9,"Hello"]
+```
+```bash
+print(L[3],L[1])
+
+print(L[-1])
+```
+### How to Create a new List containing 1 to 100 numbers ?
+
+```bash
+L = []
+
+for i in range(1,101):
+    L.append(i)
+```
+```bash
+print(L)
+```
+### Functions in List
+```bash
+l = [2,8.4,"Bishnudev",False]
+```
+- Delete methods in a List
+```bash
+del(l[2])
+```
+```bash
+l.pop(2)
+```
+```bash
+l.remove(2)
+```
+```bash
+l.clear()
+```
+- Update methods in a List
+```bash
+l = [2,8.4,"Bishnudev",False,2]
+```
+```bash
+l[0] = 9
+```
+```bash
+l.insert(3,"UI Goku")
+```
+```bash
+l.append("UE Vegeta")
+```
+```bash
+n = {2,3,4}
+l.extend(n)
+```
+```bash
+print(l.count(2))
+```
+```bash
+L = [9,4,5,1,2]
+
+print(max(L))
+```
+```bash
+print(min(L))
+```
+```bash
+L.sort()
+```
+```bash
+L.reverse()
+```
+```bash
+print(L.index(1))
+```
+- Zip -> Used to iterate two List at the same time
+```bash
+l1 = [10,20,30,40,50]
+l2 = [1,2,3,4,5]
+
+for a,b in zip(l1,l2):
+    print(a,b)
+```
+### How to Convert a String into a List ?
+- Method 1
+```bash
+str = input("Enter the value : ")
+
+l = str.split()
+```
+- Method 2
+```bash
+m = [str]
+```
+- Method 3
+```bash
+L = []
+
+for a in range(1,4):
+    k = input(f"Enter the value of {a} : ")
+    L.append(k)
+```
+## Tuple Functions & Operations
+
+### Iterations of Tuple
+```bash
+t = (10,20,30,'Tuple','Immutable')
+```
+- Method 1
+```bash
+l = len(t)
+
+for a in range(l):
+    print(t[a])
+```
+```bash
+for items in t:
+    print(items)
+```
+```bash
+T = (10,20,30,40,50,10,10)
+```
+```bash
+print(min(T))
+```
+```bash
+print(max(T))
+```
+```bash
+print(T.count(10))
+```
+```bash
+print(T.index(40))
+```
+```bash
+print(sum(T))
+```
+
+## Dictionary Functions & Operations
+
+```bash
+d = {
+    'course':'Python',
+    'duration':'3 Months',
+    'source':'Github'
+}
+```
+- get() Function -> Returns the value according the keys
+```bash
+print(d.get('duration'))
+```
+- keys() Function -> Get the keys of a dictionary
+```bash
+print(d.keys())
+```
+- Values() Function -> Get the values of a dictionary
+```bash
+print(d.values())
+```
+- items() Function -> Get all the items (Keys + Values)
+```bash
+print(d.items())
+```
+- Deletion Functions in Dictionary
+```bash
+d.pop('source')
+```
+```bash
+del d ['duration']
+```
+- Update method
+```bash
+d.update({
+    'course':'Django'
+})
+```
+- Clear method -> Clear whole Dictionary
+```bash
+d.clear()
+```
+- Insert method
+```bash
+d['desc'] = 'This is a Python tutorial'
+```
+- dict method -> Creating a Dictionary
+```bash
+D = dict(name='Bishnudev',hobby='Coding')
+```
+### Nested Dictionary
+```bash
+d = {
+    'name' : {
+        'mainName' : 'Bishnudev',
+        'surName' : 'Khutia'
+    },
+    'roll' : {
+        'collegeRoll' : 'CSE/20/020',
+        'univerRoll' : 1070120026
+    }
+}
+```
+- Print a value
+```bash
+print(d['roll']['univerRoll'])
+```
+- Iterate the nested dictionary
+```bash
+for k,v in d.items():
+    print(k,v['surName'])
+```
