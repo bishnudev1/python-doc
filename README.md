@@ -756,3 +756,135 @@ print(d['roll']['univerRoll'])
 for k,v in d.items():
     print(k,v['surName'])
 ```
+## Set Functions & Operators
+
+### Iteration in Sets
+
+```bash
+s = {10,20,30,'Sets','Unorder','Unindex'}
+```
+```
+for items in s:
+    print(items)
+```
+### Convert List into a Set
+
+```bash
+l = ['Hello','Hi','Greetings','Hola','Hay']
+print(set(l))
+```
+```bash
+S.add(80)
+```
+```bash
+S.pop()
+```
+```bash
+S.remove(30)
+```
+```bash
+S.clear()
+```
+```bash
+S.discard(20)
+```
+- Update Function -> Creates a new Sets from a old Set
+```bash
+new_s = [10,20,30,120]
+
+S.update(new_s)
+```
+## Modules in Python
+There's two types of Module
+- Inbuilt Module
+- User-Defined Module
+- We need to import it in our Python program to use it
+- It can be Class, Funtion or just some bunch of codes that we can use it in our other program
+### First Program
+```bash
+def hello(name):
+    return f'Hello {name}'
+```
+### Use it in Second Program
+```bash
+from Module import hello
+
+print(hello('Bishnudev'))
+```
+### Math Module
+```bash
+import math
+```
+- CEIL -> Return the ceiling of x, the smallest integer greater than or equal to x. If x is not a float, delegates to x__ceil__(), which should return an Integral value.
+```bash
+x = 10.6
+print(math.ceil(x))
+```
+- FABS -> Return the absolute(positive) value of x
+```bash
+x = -10
+print(math.fabs(x))
+```
+- Factorial -> Return the factorial value of x
+```bash
+x = 6
+print(math.factorial(x))
+```
+- Floor -> Opposite of CEIL Function
+```bash
+x = 13.3
+print(math.floor(x))
+```
+- FSUM(Iterable) -> Return the sum of a List,Tuple
+```bash
+l = [3,9,2,1,12]
+print(math.fsum(l))
+```
+- SQRT -> Returns the square root value of x
+```bash
+x = 81
+print(math.sqrt(x))
+```
+### Random Module
+```bash
+import random
+```
+- Randint -> Generates a random between two range
+```bash
+print(random.randint(1,9))
+```
+- Randrange -> Generates two random between except last range number
+```bash
+print(random.randrange(2,4))
+```
+- Random Choice -> Generate a random number in a list
+```bash
+l = [1,2,3,4,5,6]
+
+print(random.choice(l))
+```
+- Random -> Generate a float number 
+```bash
+print(random.random())
+```
+- Shuffle -> Shuffle the list 
+```bash
+random.shuffle(l)
+print(l)
+```
+- Uniform -> Generates a random float value between range
+```bash
+print(random.uniform(1,5))
+```
+### Datetime Module
+```bash
+import datetime
+```
+- How to get all date & time with one line of code ?
+```bash
+print(datetime.datetime.now()) 
+```
+- Creating Date Objects
+```bash
+print(datetime.datetime(2022,2,2))
+```
