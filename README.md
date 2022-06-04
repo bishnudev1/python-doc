@@ -909,4 +909,68 @@ l = pickle.load(file)
 print(l)
 ```
 ## JSON in Python
-### Coming Soon :)
+
+- JSON (Javascript Object Notation).
+- It is mainly used for storing and transferring data between the browser and the server.
+- JSON is text,written with Javascript Object Notation.
+- Python too supports JSON with a built-in-package called json
+```bash
+import json
+```
+### JSON supports mainly 6 data types 
+- String
+- Number
+- Boolean
+- Null
+- Object
+- Array
+- In Python JSON exists as a string.
+```bash
+p = '{"name:"Bishnu","lang":["Python","Java"]}'
+```
+### Creating JSON file in Python !
+```bash
+import json
+```
+```bash
+d = {
+    'course':'JSON',
+    'fees':2000,
+    'duration':'1 Month'
+}
+```
+```bash
+f = json.dumps(d)
+```
+```bash
+print(f)
+```
+### Convert JSON to Python Object !
+- You can parse a JSON to Dictionary by using json.loads() method.
+```bash
+x = '{"course": "JSON", "fees": 2000, "duration": "1 Month"}'
+```
+```bash
+y = json.loads(x)
+print(y)
+```
+### Writing & Reading JSON File (File-Handling)
+- Suppose you have a JSON API called posts.json
+- You can get this api data easily by file handling method in python
+```bash
+import json
+
+file = open('posts.json','r')
+x = file.read()
+
+finaldata = json.loads(x)
+```
+- Iterate the data by loop
+```bash
+for a in finaldata:
+    print(a['title'],a['userID'])
+```
+## Object Oriented Programming in Python
+
+### Class & Object
+- Coming Soon 😇
