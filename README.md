@@ -973,4 +973,66 @@ for a in finaldata:
 ## Object Oriented Programming in Python
 
 ### Class & Object
-- Coming Soon 😇
+- Python is an object oriented programming language.
+- Almost everything in Python is an object, with its properties and methods.
+- A Class is like an object constructor, or a "blueprint" for creating objects.
+- Create a Class
+```bash
+class DemoClass:
+	a = 20
+```
+- Create a Object
+```bash
+myobj = DemoClass()
+```
+- Get the value of a
+```bash
+print(myobj.a)
+```
+### Methods & Constructor
+- Create a Method in a Class
+```bash
+class Hello:
+	def Sum(self):
+		print(20+30)
+```
+- Call the sum Method
+```bash
+myobj1 = Hello()
+myobj1.Sum()
+```
+### Use of self keyword in Method
+- We use self keyword in Methods in a Class
+- Without using self tag you can't access a local variable even it's declared in a Class
+- You can use multiple arguments in a Method but self is mandetory otherwise it's just act like a Function not like a Method
+```bash
+
+class LearnSelf:
+    a = 15
+
+    def getValue(self):
+        print(self.a)
+
+    def greet(self):
+        print('Hello Everyone !')
+
+    def addtion(self,x):
+        print(self.a + x)
+
+myObj = LearnSelf()
+
+myObj.getValue()
+myObj.greet()
+myObj.addtion(22)
+```
+```bash
+class LearnSelf:
+        def addtion(self,x,y):
+            print(x + y)
+    
+myObj = LearnSelf()
+myObj.addtion(22,78)
+```
+
+### Constructor in Python
+- Coming Soon :)
