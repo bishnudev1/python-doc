@@ -1035,4 +1035,95 @@ myObj.addtion(22,78)
 ```
 
 ### Constructor in Python
+- Constructors are nothing but Methods where we don't need to Call them.
+- They will call itself while we make our Objects
+- Syntax of Constructor : __init__
+```bash
+class Constructor:
+    def __init__(self):
+        print('This is a Constructor !')
+
+newObj = Constructor()
+```
+### Inheritance in Python
+- We can make a new Class from an another Class
+- We can call any Method from old/another Class by New Classes Object
+- There's 3 inheritance in Python
+1. Single Inheritance
+2. Multilevel Inheritance
+3. Multiple Inheritance
+
+Single Inheritance
+- Make a class A
+```bash
+class A:
+    def displayA(self):
+        print('This is Display A')
+```
+- Make a class B with A
+```bash
+class B(A):
+    def displayB(self):
+        print('This is Display B')
+```
+- Make a object of class B
+```bash
+ObjectB = B()
+```
+- Get the value of A class and B class with B classes object
+```bash
+ObjectB.displayA()
+ObjectB.displayB()
+```
+Multilevel Inheritance
+- Just like Single Inheritance but we can make more than 3 Class here
+```bash
+class A:
+    def displayA(self):
+        print('This is Display A')
+```
+```bash
+class B(A):
+    def displayB(self):
+        print('This is Display B')
+```
+```bash
+class C(B):
+    def DisplayC(self):
+        print('This is Display C')
+```
+```bash
+ObjectC = C()
+```
+```bash
+ObjectC.displayA()
+ObjectC.displayB()
+ObjectC.DisplayC()
+```
+Multiple Inheritance
+- We can make One new Class from two Defined Class
+```bash
+class A:
+    def displayA(self):
+        print('This is Display A')
+```
+```bash
+class B:
+    def displayB(self):
+        print('This is Display B')
+```
+```bash
+class C(A,B):
+    def displayC(self):
+        print('This is Display C')
+```
+```bash
+ObjectC = C()
+```
+```bash
+ObjectC.displayA()
+ObjectC.displayB()
+ObjectC.displayC()
+```
+## Encapsulation in Python
 - Coming Soon :)
