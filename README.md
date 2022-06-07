@@ -1126,4 +1126,116 @@ ObjectC.displayB()
 ObjectC.displayC()
 ```
 ## Encapsulation in Python
-- Coming Soon :)
+An object variables should not always be directly accessible.
+The methods can ensure the correct values are set. If an incorrect value is set, the method can return an error.
+There's two Function
+- Getter Function -> Return the setting data with Constructor
+- Setter Function -> Set the data via Constructor
+```bash
+class Student:
+
+    def __init__(self):
+        self.name = ''
+    
+    def getName(self):
+        return self.name
+    
+    def setName(self,myName):
+        self.name = myName
+```
+```bash
+Name = Student()
+Name.setName('Bishnudev Khutia')
+print(Name.getName())
+```
+## Polymorphism in Python
+It means same function name (but different signatures) being uses for different types.
+There's two type of Polymorphism
+### Overloading
+- We don't need to pass Parameter in Overloading Function (Not Mandetory)
+```bash
+class Overloading:
+    def display(self,name=''):
+        print('Hello '+name)
+```
+```bash
+obj = Overloading()
+obj.display()
+obj.display('Bishnudev')
+```
+### Overridding
+- We can overwrite a same named function in two different class with Inheritance
+```bash
+class Class1:
+    def display(self):
+        print('This is Display 1')
+
+class Class2(Class1):
+    def display(self):
+        # Now if we want to run display from Parent Class / Class 1 we have to use super() keyword
+        super().display()
+        print('This is Display 2')
+```
+```bash
+obj = Class2()
+obj.display()
+```
+## Errors and Built-in Exceptions
+These errors can be broadly classified into two classes
+- Syntax Errors ( Can't be handled, You have to fix them in your own )
+```bash
+a = 10
+b = 20
+
+if a == b
+    print('Equal')
+else
+    print('Not Equal')
+```
+- Logical Errors ( Exceptions )
+```bash
+print(1/0)
+```
+```bash
+l = [10,20,30,40,50]
+print(l[6])
+```
+### Exception Handling
+Errors we can handle or fix with program are called Exception Handling
+- ZeroDivisionError
+```bash
+a = 10
+print(1/0)
+```
+- NumError
+```bash
+print(b)
+# b is not defined
+```
+- TypeError
+```bash
+a = 10
+b = 'Hello'
+print(a+b)
+```
+- ValueError
+```bash
+a = int(input('Enter the no : ')
+# If you give input 'Hello' or string instead of 10 or any number it gives error
+```
+- IndexError
+```bash
+l = [10,20,30,40,50]
+print(l[6])
+```
+- KeyError
+```bash
+d = {'name':'Bishnudev','id':'101'
+print(d['roll'])
+```
+- ModuleNotFoundError
+```bash
+print(random.randint[0,10])
+```
+- ImportError
+If any functions are not available in imported module then it wil give error
